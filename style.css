@@ -5,45 +5,51 @@
 body {
     font-size: 18px;
 }
-
+.menu-bar {
+    margin-top: 40px;
+    
+}
 .menu-bar ul {
     display: inline-flex;
     gap: 20px;
-    margin-top: 30px;    
+    margin-left: 40px;
 }
-.menu-bar li {
+.menu-bar ul li {
     list-style: none;
-    color: gray; 
+    color: #3B3B3B;
+    padding-bottom: 8px;
+    
 }
-.menu-bar {
-    margin-left: 50px;
-
-}
-.menu-bar a {
+.menu-bar ul li a{
     text-decoration: none;
-    cursor: pointer;
-    color: lightslategray;
+    color: #3B3B3B;
+    
 }
-.menu-bar li :hover {
+.menu-bar ul li:hover {
     border-bottom: 2px solid blue;
+    
 }
-.sub-menu1 {
-    color: gray;
+.menu-bar ul li a:hover {
+    background-color: #d3d3d3;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 6px;
+}
+.sub-menu-1{
     display: none;
 }
-.sub-menu1 a {
-    text-decoration: none;
-}
-.sub-menu1 li {
-    list-style: none;
-    border-bottom: none;
-}
-.menu-bar li:hover .sub-menu1 {
+.menu-bar ul li:hover .sub-menu-1 {
     display: block;
+    margin: 8px;
     position: absolute;
-    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
 
 }
-.menu-bar li:hover .sub-menu1 ul {
+.menu-bar ul li:hover .sub-menu-1 ul li {
     display: block;
+    padding: 6px;
+    margin: 6px;
+    border-bottom: none;
 }
